@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min">
+	<link rel="stylesheet" type="text/css" href="../fontawesome/css/keranjang.css">
+	<link rel="stylesheet" type="text/css" href="../css/loader.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+	<title>Aiman Store</title>
+  </head>
+  <div id="loader-wrapper">
+  <div class="spinner"></div>
+</div>
+    <script>
+      var loader = document.getElementById("loader-wrapper");
+  
+      window.addEventListener("load",function(){
+        loader.style.display = "none" ;
+      })
+    </script>
+  <body>
+	   <nav class="navbar navbar-expand-lg ">
+	  <div class="container">
+		 <a class="navbar-brand" href="#">
+      <img src="./assets/logo.png" alt="" width="50" height="50" class="me-2">
+      <strong>Duitin Sampah</strong>
+    </a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+		   <form class="d-flex ms-auto">
+		<input class="form-control me-2" type="search" placeholder="Cari Barang Anda Disini" aria-label="Cari">
+		<button class="btn btn-light" type="submit">Cari</button>
+		</form>
+		  <ul class="navbar-nav ms-auto">
+			<li class="nav-item">
+			  <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="upload.html">Upload</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="keranjang.html">Keranjang</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="akun.html">Akun</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="index.html">Keluar</a>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	
+	<!-- breadcrumb -->
+	<div class="container">
+		<nav aria-label="breadcrumb" style="background-color: #fff" class="mt-3">
+  <ol class="breadcrumb p-3">
+    <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Beranda</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Keranjang</li>
+  </ol>
+</nav>
+	</div>
+	
+	<!-- keranjang -->
+	<div class="container" style="width: 100%; object-fit: contain">
+		<div class="row row-product" style="width: 100%; object-fit: contain">
+			<div class="col" style="width: 100%; object-fit: contain">
+				<table class="table">
+				  <thead class="table-secondary">
+					<tr>
+					  <th scope="col">Hapus</th>
+					  <th scope="col">Produk</th>
+					  <th scope="col">Gambar</th>
+					  <th scope="col">Harga</th>
+					  <th scope="col">Jumlah</th>
+					  <th scope="col">Sub Total</th>
+					</tr>
+				  </thead>
+				  <tbody class="align-middle">
+					<tr>
+					  <th scope="row"><a href=""><i class="bi bi-trash-fill"></i></a></th>
+					  <td>Paku</td>
+					  <td><img src="./assets/pakuku.jpg" class="img-keranjang" width="70"; height="70";></td>
+					  <td>Rp. 9.000</td>
+					  <td>
+					  	<button class="button btn-success btn-sm"><i class="bi bi-plus-square-fill"></i></button>
+					  	<span class="mx-2">1</span>
+					  	<button class="button btn-success btn-sm"><i class="bi bi-dash-square-fill"></i></button>
+					  </td>
+					  <td>Rp. 9.000</td>
+					</tr>
+					<tr>
+					  <th scope="row"><a href=""><i class="bi bi-trash-fill"></i></a></th>
+					  <td>Botol</td>
+					  <td><img src="./assets/botol.png" class="img-keranjang" width="70"; height="70";></td>
+					  <td>Rp. 3.500</td>
+					  <td>
+					  	<button class="button btn-success btn-sm"><i class="bi bi-plus-square-fill"></i></button>
+					  	<span class="mx-2">1</span>
+					  	<button class="button btn-success btn-sm"><i class="bi bi-dash-square-fill"></i></button>
+					  </td>
+					  <td>Rp. 3.500</td>
+					</tr>
+					<tr>
+					  <th scope="row"><a href=""><a href=""><i class="bi bi-trash-fill"></i></a></th>
+					  <td>Kardus</td>
+					  <td><img src="./assets/kardus.png" class="img-keranjang" width="70"; height="70";></td>
+					  <td>Rp. 2.750</td>
+					  <td>
+					  	<button class="button btn-success btn-sm"><i class="bi bi-plus-square-fill"></i></button>
+					  	<span class="mx-2">1</span>
+					  	<button class="button btn-success btn-sm"><i class="bi bi-dash-square-fill"></i></button>
+					  </td>
+					  <td>Rp. 2.750</td>
+					</tr>
+				  </tbody>
+			</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<table class="table">
+				  <thead>
+				    <tr>
+				      <th scope="col" colspan="2">Total Keranjang Belanja</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td class="fw-bold">Total Harga</td>
+				      <td>Rp. 14.750</td>
+				    </tr>
+				    <tr>
+				    	<td><button class="btn btn-warning btn-sm">Checkout</button><td>
+				    </tr>
+				  </tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer -->
+	<footer class="bg-light p-5 mt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<a href="" class="text-decoration-none">
+						<img src="../assets/logo1.png" style="width: 30px;">
+					</a>
+					<span>Copyright @2022 | Created and Development by <a href="https://www.youtube.com/channel/UCFfPBvdsP0ROarlekViw3Vw" class="text-decoration-none">Aiman</a>
+					<span>
+				</div>
+				<div class="col-md-6 text-end">
+					<a href="https://www.instagram.com/aimanfariis/" class="text-decoration-none">
+						<img src="./assets/logoig.png" class="ms-2" style="width: 30px;">
+					</a>
+					<a href="https://www.facebook.com/kjen.chiz" class="text-decoration-none">
+						<img src="./assets/logofesbuk.png" class="ms-2" style="width: 30px;">
+					</a>
+					<a href="https://twitter.com/aimanfariis" class="text-decoration-none">
+						<img src="./assets/logotwitter.jpeg" class="ms-2" style="width: 30px;">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+body{
+	background-color: #D0E7D2;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	color: #2D2D2D;
+}
+.form-control{
+	width: 350px;
+}
+.img-categori{
+	width: 50px;
+}
+.img-categori:hover{
+	transform: scale(1.5);
+}
+.row-container{
+	background-color: #fff;
+	margin: 0px;
+}
+.card:hover{
+	border: 3px solid #2d2d2d;
+}
+.row-product{
+	background-color: #fff;
+	margin: 0;
+	padding: 5px;
+	padding-top: 16px;
+}
+.navbar-expand-lg{
+    background-color: #17594A;
+}
+.nav-link{
+    color: #fff;
+}
+.navbar-brand{
+    color: #fff;
+}
+
+    
+
+
+</style>
