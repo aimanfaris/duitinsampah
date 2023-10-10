@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min">
+	<link rel="stylesheet" type="text/css" href="../fontawesome/css/styleproduct.css">
+	<link rel="stylesheet" type="text/css" href="../css/loader.css">
+    
+	<title>Aiman Store</title>
+  </head>
+  <div id="loader-wrapper">
+  <div class="spinner"></div>
+</div>
+    <script>
+      var loader = document.getElementById("loader-wrapper");
+  
+      window.addEventListener("load",function(){
+        loader.style.display = "none" ;
+      })
+    </script>
+  <body>
+	   <nav class="navbar navbar-expand-lg ">
+	  <div class="container">
+		 <a class="navbar-brand" href="#">
+      <img src="./assets/logo.png" alt="" width="50" height="50" class="me-2">
+      <strong>Aiman Store</strong>
+    </a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+		   <form class="d-flex ms-auto">
+		<input class="form-control me-2" type="search" placeholder="Cari Barang Anda Disini" aria-label="Cari">
+		<button class="btn btn-light" type="submit">Cari</button>
+		</form>
+		  <ul class="navbar-nav ms-auto">
+			<li class="nav-item">
+			  <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Notifikasi</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Keranjang</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Daftar</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Masuk</a>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	
+	<!-- breadcrumb -->
+	<div class="container">
+		<nav aria-label="breadcrumb" style="background-color: #fff" class="mt-3">
+  <ol class="breadcrumb p-3">
+    <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Beranda</a></li>
+    <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Kategori</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Produk</li>
+  </ol>
+</nav>
+	</div>
+	
+	<!-- single product -->
+	<div class="container">
+		<div class="row row-product">
+			<div class="col-lg-5">
+				<figure class="figure">
+				<img src="./assets/kardus.png" class="figure-img img-fluid" style="border-radius: 5px; width: 450px;">
+				<figcaption class="figure-caption d-flex justify-content-evenly">
+					<a href="#">
+					<img src="./assets/kardus.png" class="figure-img img-fluid" style="border-radius: 5px; width: 70px;">
+					</a>
+					<a href="#">
+					<img src="./assets/kardus.png" class="figure-img img-fluid" style="border-radius: 5px; width: 70px;">
+					</a>
+					<a href="#">
+					<img src="./assets/kardus.png" class="figure-img img-fluid" style="border-radius: 5px; width: 70px;">
+					</a>
+					<a href="#">
+					<img src="./assets/kardus.png" class="figure-img img-fluid" style="border-radius: 5px; width: 70px;">
+					</a>
+					<a href="#">
+					<img src="./assets/kardus.png" class="figure-img img-fluid" style="border-radius: 5px; width: 70px;">
+					</a>
+				</figcaption>
+			</figure>
+		</div>
+	
+		<div class="col-lg-7">
+			<h4>Kardus Mie Instan</h4>
+			<div class="garis-product"></div>
+			<h3 class="text-muted">Rp. 2.750</h3>
+			
+			<div>
+			</div class="btn-produk">
+				<a href="keranjang.html" class="btn btn-dark btn-lg"></i>Masukan Keranjang</a>
+				<a href="#" class="btn btn-warning btn-lg">Beli Sekarang</a>
+			</div>
+		</div>
+		
+		<!-- review -->
+		<div class="row row-product">
+			<div class="col-12">
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+			  <li class="nav-item" role="presentation">
+				<button class="nav-link active" id="deskripsi-tab" data-bs-toggle="tab" data-bs-target="#deskripsi" type="button" role="tab" aria-controls="deskripsi" aria-selected="true" style="color: #2d2d2d;">Deskripsi produk</button>
+			  </li>
+			  <li class="nav-item" role="presentation">
+				<button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review" type="button" role="tab" aria-controls="review" aria-selected="false" style="color: #2d2d2d;">Review produk</button>
+			  </li>
+			</ul>
+			<div class="tab-content p-3" id="myTabContent">
+			  <div class="tab-pane fade show active deskripsi" id="deskripsi" role="tabpanel" aria-labelledby="home-tab">
+				<p>
+				Nike Air Jordan Black & Red </br>
+				
+				style		: Basketball </br>
+				Material	: Leather </br>
+				Desain		: Trendy </br>
+				color		: Black & Red </br>
+				Note		: Cocok untuk berolahraga (basket), dan kegiatan sehari hari </br>
+				</p>
+			  </div>
+			  <div class="tab-pane fade review" id="review" role="tabpanel" aria-labelledby="profile-tab">
+				<div class="row">
+					<div class="col-1">
+						<img src="../assets/1.png" class="review-img rounded-circle">
+					</div>
+					<div class="col">
+						<h5 class="review-name">Fia Fauziah</h5>
+						<p class="review-des">Produk 100& look like pict, packing rapi, pengiriman cepat</P>
+					</div>
+				</div>
+				
+					<div class="row">
+					<div class="col-1">
+						<img src="../assets/5.png" class="review-img rounded-circle">
+					</div>
+					<div class="col">
+						<h5 class="review-name">Dimas Nugraha</h5>
+						<p class="review-des">Barang sampe dengan selamat, packing juga oke, original</P>
+					</div>
+				</div>
+				
+					<div class="row">
+					<div class="col-1">
+						<img src="../assets/3.png" class="review-img rounded-circle">
+					</div>
+					<div class="col">
+						<h5 class="review-name">Sarifa Dila</h5>
+						<p class="review-des">Saya akan order lagi disini, thankyouuuu</P>
+					</div>
+				</div>
+				
+					<div class="row">
+					<div class="col-1">
+						<img src="../assets/4.png" class="review-img rounded-circle">
+					</div>
+					<div class="col">
+						<h5 class="review-name">Budiman</h5>
+						<p class="review-des">Mantapp maszehhh barangnya</P>
+					</div>
+				</div>
+				
+					<div class="row">
+					<div class="col-1">
+						<img src="../assets/2.png" class="review-img rounded-circle">
+					</div>
+					<div class="col">
+						<h5 class="review-name">Jajang</h5>
+						<p class="review-des">Barangnya oke, sukses teruss kak, banjir orderan</P>
+					</div>
+				</div>
+			  </div>
+			</div>
+			<div>
+		</div>
+	</div>
+	
+	<!-- footer -->
+	<footer class="bg-light p-5 mt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<a href="" class="text-decoration-none">
+						<img src="./assets/logo.png" style="width: 30px;">
+					</a>
+					<span>Copyright @2023 | Created and Development by <a href="https://www.youtube.com/channel/UCFfPBvdsP0ROarlekViw3Vw" class="text-decoration-none">Aiman</a>
+					<span>
+				</div>
+				<div class="col-md-6 text-end">
+					<a href="https://www.instagram.com/aimanfariis/" class="text-decoration-none">
+						<img src="./assets/logoig.png" class="ms-2" style="width: 30px;">
+					</a>
+					<a href="https://www.facebook.com/kjen.chiz" class="text-decoration-none">
+						<img src="./assets/logofesbuk.png" class="ms-2" style="width: 30px;">
+					</a>
+					<a href="https://twitter.com/aimanfariis" class="text-decoration-none">
+						<img src="./assets/logotwitter.jpeg" class="ms-2" style="width: 30px;">
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+body{
+	background-color: #D0E7D2;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	color: #17594A;
+}
+.form-control{
+	width: 350px;
+}
+.img-categori{
+	width: 50px;
+}
+.img-categori:hover{
+	transform: scale(1.5);
+}
+.row-container{
+	background-color: #fff;
+	margin: 0px;
+}
+.card:hover{
+	border: 3px solid #2d2d2d;
+}
+.row-product{
+	background-color: #fff;
+	margin: 0;
+	padding: 5px;
+	padding-top: 16px;
+}
+.garis-product{
+	border-bottom: 2px solid #2d2d2d; 
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+.review-img{
+	width: 50px;
+}
+.review-name{
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+.review-des{
+	font-size: 14px;
+}
+.deskripsi{
+	height: 150px;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+.review{
+	height: 250px;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+.nav-link:hover{
+	color: #FFE6A7;
+}
+.navbar-brand:hover{
+	color: #FFE6A7;
+}
+.navbar-expand-lg{
+    background-color: #17594A;
+}
+.nav-link{
+    color: #fff;
+}
+.navbar-brand{
+    color: #fff;
+}
+.nav-tabs{
+    color: #2d2d2d;
+}
+</style>
