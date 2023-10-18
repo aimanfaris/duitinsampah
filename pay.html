@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min">
+	<link rel="stylesheet" type="text/css" href="../fontawesome/css/stylehome.css">
+	<link rel="stylesheet" type="text/css" href="../css/loader.css">
+	<title>Duitin Sampah</title>
+  </head>
+
+<div id="loader-wrapper">
+  <div class="spinner"></div>
+</div>
+    <script>
+      var loader = document.getElementById("loader-wrapper");
+  
+      window.addEventListener("load",function(){
+        loader.style.display = "none" ;
+      })
+    </script>
+  <body>
+
+	   <nav class="navbar navbar-expand-lg ">
+	  <div class="container">
+		 <a class="navbar-brand" href="#">
+      <img src="./assets/logo.png" alt="" width="50" height="50" class="me-2">
+      <strong>Duitin Sampah</strong>
+    </a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+		   <form class="d-flex ms-auto">
+		<input class="form-control me-2" type="search" placeholder="Cari Barang Anda Disini" aria-label="Cari">
+		<button class="btn btn-light" type="submit">Cari</button>
+		</form>
+		  <ul class="navbar-nav ms-auto">
+			<li class="nav-item">
+			  <a class="nav-link active" aria-current="page" href="tampawal.html">Beranda</a>
+			</li>
+			<li class="nav-item"> 
+			  <a class="nav-link" href="upload.html">Upload</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="keranjang.html">Keranjang</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="akun.html">Akun</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Keluar</a>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+
+  <div class="container rounded bg-white">
+    <div class="bg row d-flex justify-content-center pb-5">
+        <div class="col-sm-4 col-md-4 ml-1">
+            <div class="py-4 pl-6 d-flex flex-row">
+                <h5><span class="fa fa-check-square-o"></span><b>DUITIN SAMPAH</b> | </h5><span class="pl-2">Pay</span>
+            </div>
+            <div class="bg-white p-2 d-flex flex-column" style="border-radius:14px">
+                <div class="text-center mt-4"> <img class="img-fluid" src="./assets/kardus.png" width="200"/> </div>
+                <h5>Kardus Mie Instan</h5>
+                <p>kelas premium</p>
+                <h4 class="green">Rp. 2.750</h4>
+                <div class="rating d-flex">
+                    <div class="col-10"> <img src="https://akproject.tech/assets/img/icons/ic-star.svg" alt=""> <img src="https://akproject.tech/assets/img/icons/ic-star.svg" alt=""> <img src="https://akproject.tech/assets/img/icons/ic-star.svg" alt=""> <img src="https://akproject.tech/assets/img/icons/ic-star.svg" alt=""> <img src="https://akproject.tech/assets/img/icons/ic-star.svg" alt=""> <span class="green"></span> </div>
+                    <div><img src="https://buildwithangga.com/themes/front/images/ic_lv_hard.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-5 col-md-6 mobile"> <br>
+            <div class="bg-white p-3 d-flex flex-column" style="border-radius:14px">
+                <div class="pt-2">
+                    <h5>Detail Pembayaran</h5>
+                </div>
+                <div class="d-flex">
+                    <div class="col-8">Harga </div>
+                    <div class="ml-auto green">Rp. 2.750</div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-8">Harga <span class="green">Discount</span></div>
+                    <div class="ml-auto">Rp. -</div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-8">Kode promo</div>
+                    <div class="ml-auto green">-</div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-8">Total Transfer</div>
+                    <div class="ml-auto "><b>Rp. 2.750</b></div>
+                </div>
+                <div class="pt-2">
+                    <div class="border-top px-4 mx-8 pt-2"></div>
+                    <h5>Metode pembayaran</h5>
+                </div>
+                <div class="pl-2">
+                    <ul class="list-group">
+                      <li class="list-group-item"> <img src="./assets/logodana.png" width="50px" height="30px">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Dana
+                      </li>
+                      <li class="list-group-item"> <img src="./assets/logogopay.jpg" width="50px" height="30px">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        Gopay
+                      </li>
+                      <li class="list-group-item"> <img src="./assets/logocod.jpg" width="50px" height="30px">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        COD
+                      </li>
+                    </ul>
+              <a href="statuspesanan.html">
+                </div> <div class="text-center "> <input type="button" value="Konfirmasi Pembayaran" class=" btn mt-4 btn-warning btn-block" style="border-radius:100px; ">  </div>
+                </a>
+                <a href="singleproduct.html">
+                <div class="text-center " > <input type="button" value="Batalkan Pembayaran" class=" btn mt-4 btn-danger btn-block" style="border-radius:100px; "> </div>
+              </a>  
+              </div>
+            <div class="bg-white mt-4 p-3 d-flex flex-column" style="border-radius:14px">
+                <div class="pt-2">
+                <div class="pt-2">
+                    <h5>Butuh bantuan? hubungi kami</h5>
+                </div>
+                <div class="d-flex">
+                    <div class="col-8">Admin</div>
+                    <div class="ml-auto">Gus</div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-8">No. WhatsApp</div>
+                    <div class="ml-auto"><b>+62815446747</b></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  </body>
+</html>
+
+<style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+body{
+	background-color: #D0E7D2;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	color: #2D2D2D;
+}
+.form-control{
+	width: 350px;
+}
+.img-categori{
+	width: 50px;
+}
+.img-categori:hover{
+	transform: scale(1.5);
+}
+.row-container{
+	background-color: #fff;
+	margin: 0px;
+}
+.card:hover{
+	border: 3px solid #2d2d2d;
+}
+.nav-link:hover{
+	color: #FFE6A7;
+}
+.navbar-brand:hover{
+	color: #FFE6A7;
+}
+.navbar-expand-lg{
+    background-color: #17594A;
+}
+.nav-link{
+    color: #fff;
+}
+.navbar-brand{
+    color: #fff;
+}
+body{background-color: #D0E7D2}.bg{background-color: #D0E7D2}.green{color: rgb(15, 207, 143);font-weight: 680}@media(max-width:567px){.mobile{padding-top: 40px}}
+</style>
