@@ -12,7 +12,9 @@
 	<link rel="stylesheet" type="text/css" href="../css/loader.css">
     
 	<title>Duitin Sampah</title>
+  <link rel="icon" href="./assets/logo.png">
   </head>
+
 <div id="loader-wrapper">
   <div class="spinner"></div>
 </div>
@@ -25,40 +27,48 @@
     </script>
   <body>
 
-	   <nav class="navbar navbar-expand-lg ">
-	  <div class="container">
-		 <a class="navbar-brand" href="#">
-      <img src="./assets/logo.png" alt="" width="50" height="50" class="me-2">
-      <strong>Duitin Sampah</strong>
-    </a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-		   <form class="d-flex ms-auto">
-		<input class="form-control me-2" type="search" placeholder="Cari Barang Anda Disini" aria-label="Cari">
-		<button class="btn btn-light" type="submit">Cari</button>
-		</form>
-		  <ul class="navbar-nav ms-auto">
-			<li class="nav-item">
-			  <a class="nav-link active" aria-current="page" href="tampawal.html">Beranda</a>
-			</li>
-			<li class="nav-item"> 
-			  <a class="nav-link" href="upload.html">Upload</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="keranjang.html">Keranjang</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="akun.html">Akun</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">Keluar</a>
-			</li>
-		  </ul>
-		</div>
-	  </div>
-	</nav>
+        <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo.png" alt="" width="50" height="50" class="me-2">
+          <strong>Duitin Sampah</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <form class="d-flex ms-auto">
+        <input class="form-control me-2" type="search" placeholder="Cari Barang Anda Disini" aria-label="Cari">
+        <button class="btn btn-light" type="submit">Cari</button>
+        </form>
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="tampawal.html">Beranda</a>
+          </li>
+          <li class="nav-item"> 
+            <a class="nav-link" href="upload.html">Upload</a>
+          </li>
+          <li class="nav-item">
+                    <a href="keranjang.html">
+              <img src="./assets/keranjangku.png" class="ms-2" style="width: 35px;">
+            </a>
+          </li>
+            <div class="dropdown">
+              <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://avatars.githubusercontent.com/u/90247965?v=4" alt="ava" width="32" height="32" class="rounded-circle border-dark">
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <!-- Dropdown content here -->
+                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="index.html">Sign Out</a></li>
+              </ul>
+          </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 
     <div class="container" margin="0 ms-auto">
@@ -141,17 +151,24 @@ body{
 }
 
 .card {
-  border-radius: 10px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-  width: 600px;
-  height: 260px;
+  width: 80%; /* Use percentage for responsive width */
+  max-width: 600px; /* Set a maximum width if needed */
+  height: auto; /* Allow height to adjust based on content */
   background-color: #ffffff;
-  padding: 10px 30px 40px;
-  align-items: center;
+  padding: 20px 30px; /* Adjust padding based on your design needs */
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* Media Query for Small Screens */
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
 }
 
 .card h3 {

@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="../fontawesome/css/stylehome.css">
 	<link rel="stylesheet" type="text/css" href="../css/loader.css">
 	<title>Duitin Sampah</title>
+  <link rel="icon" href="./assets/logo.png">
   </head>
 
 <div id="loader-wrapper">
@@ -47,14 +48,21 @@
 			  <a class="nav-link" href="upload.html">Upload</a>
 			</li>
 			<li class="nav-item">
-			  <a class="nav-link" href="keranjang.html">Keranjang</a>
+        <a href="keranjang.html">
+					<img src="./assets/keranjangku.png" class="ms-2" style="width: 35px;">
+				</a>
 			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="akun.html">Akun</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">Keluar</a>
-			</li>
+      <div class="dropdown">
+				<a href="#" class="d-block link-dark text-decoration-none dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+					<img src="https://avatars.githubusercontent.com/u/90247965?v=4" alt="ava" width="32" height="32" class="rounded-circle border-dark">
+				</a>
+				<ul class="dropdown-menu dropdown-menu-end">
+					<!-- Dropdown content here -->
+					<li><a class="dropdown-item" href="profile.html">Profile</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="index.html">Sign Out</a></li>
+				</ul>
+			</div>
 		  </ul>
 		</div>
 	  </div>

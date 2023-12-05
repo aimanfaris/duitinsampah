@@ -13,8 +13,10 @@
   <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min">
   <link rel="stylesheet" type="text/css" href="../fontawesome/css/stylehome.css">
   <link rel="stylesheet" type="text/css" href="../css/loader.css">
+  
 
   <title>Duitin Sampah</title>
+  <link rel="icon" href="./assets/logo.png">
 </head>
 <div id="loader-wrapper">
   <div class="spinner"></div>
@@ -36,9 +38,10 @@
         <strong>Duitin Sampah</strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="float: right;">
+          <span class="navbar-toggler-icon" ></span>
       </button>
+      </div>
       <div class="collapse navbar-collapse" id="navbarNav">
         <form class="d-flex ms-auto">
         </form>
@@ -186,6 +189,11 @@
       background-color: #D0E7D2;
     }
 
+    .navbar-toggler {
+      color: #2d2d2d;
+    }
+
+
     .nav-link {
       color: #17594a;
     }
@@ -195,24 +203,43 @@
     }
 
     .text-wrapper {
-      position: relative;
-      width: 385px;
-      left: 114px;
-      font-family: "Poppins", Helvetica;
-      font-weight: 500;
-      color: #ffffff;
-      font-size: 55px;
-      letter-spacing: 0;
-      line-height: normal;
-    }
+  position: relative;
+  width: 70%; /* Use percentage to make it responsive */
+  max-width: 600px; /* Set a maximum width if needed */
+  left: 50%;
+  transform: translateX(-50%); /* Center the element horizontally */
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 4vw; /* Use vw (viewport width) for responsive font size */
+  letter-spacing: 0;
+  line-height: 1.2; /* Adjust line-height based on your design needs */
+}
+
+/* Media Query for Small Screens */
+@media only screen and (max-width: 768px) {
+  .text-wrapper {
+    font-size: 6vw; /* Adjust font size for smaller screens */
+  }
+}
 
     .img {
-      position: absolute;
-      width: 350x;
-      height: 350px;
-      left: 617px;
-      object-fit: cover;
-    }
+  position: relative;
+  width: 100%; /* Use percentage to make it responsive */
+  max-width: 1000px; /* Set a maximum width if needed */
+  height: auto; /* Maintain the aspect ratio */
+  left: 50%;
+  transform: translateX(-50%); /* Center the image horizontally */
+  top: 10%; /* Adjust the top position as needed */
+  object-fit: cover;
+}
+
+/* Media Query for Small Screens */
+@media only screen and (max-width: 768px) {
+  .img {
+    top: 32%; /* Adjust top position for smaller screens */
+  }
+}
     box-sizing: border-box;
 /* Create three equal columns that floats next to each other */
 .column {
@@ -233,9 +260,21 @@
     justify-content: space-between;
 }
 .photo {
-	width: 300px; /* Sesuaikan lebar foto sesuai kebutuhan */
-	height: 300px;
+  width: 50%; /* Use percentage to make it responsive */
+  max-width: 300px; /* Set a maximum width if needed */
+  height: auto; /* Maintain the aspect ratio */
+  top: 100%;
 }
+
+/* Media Query for Small Screens */
+@media only screen and (max-width: 768px) {
+  .photo {
+    max-width: 768px; /* Adjust max-width for smaller screens */
+    top: 300%;
+    width: 30%;
+  }
+}
+
 .carousel-item{
 	width: 1000px;
 	height: 500px;
@@ -244,5 +283,11 @@
  	left: 50%;
  	transform: translate(-50%, -50%);
 }
-
+/* Media Query for Small Screens */
+@media only screen and (max-width: 768px) {
+  .carousel-item{
+    width: 1000px;
+	  height: 320px;
+  }
+}
   </style>

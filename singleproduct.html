@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     
 	<title>Aiman Store</title>
+	<link rel="icon" href="./assets/logo.png">
   </head>
   <div id="loader-wrapper">
   <div class="spinner"></div>
@@ -47,11 +48,21 @@
 			  <a class="nav-link" href="#">Upload</a>
 			</li>
 			<li class="nav-item">
-			  <a class="nav-link" href="#">Keranjang</a>
+				<a href="keranjang.html">
+					<img src="./assets/keranjangku.png" class="ms-2" style="width: 35px;">
+				</a>
 			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">Akun</a>
-			</li>
+			<div class="dropdown">
+				<a href="#" class="d-block link-dark text-decoration-none dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+					<img src="https://avatars.githubusercontent.com/u/90247965?v=4" alt="ava" width="32" height="32" class="rounded-circle border-dark">
+				</a>
+				<ul class="dropdown-menu dropdown-menu-end">
+					<!-- Dropdown content here -->
+					<li><a class="dropdown-item" href="profile.html">Profile</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="index.html">Sign Out</a></li>
+				</ul>
+			</div>
 		  </ul>
 		</div>
 	  </div>

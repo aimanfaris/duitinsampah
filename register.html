@@ -11,7 +11,8 @@
     <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="../css/loader.css">
 
-    <title>Aiman Store</title>
+    <title>Duitin Sampah</title>
+    <link rel="icon" href="./assets/logo.png">
   </head>
   <div id="loader-wrapper">
   <div class="spinner"></div>
@@ -60,21 +61,20 @@
     </div>
 
     <div class="row">
-          <div class="col-md-8">
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Alamat</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan Alamat anda">
-    </div>
-    </div>
+      <div class="col-md-7">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Alamat</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan alamat anda disini">
+</div>
+</div>
 
-     <div class="col-md-4">
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">No Handphone</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="No Handphone">
+    <div class="col-md-5">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">No Handphone</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan nomor hp anda disini">
     </div>
     </div>
     </div>
-
 
     <div class="mb-3 form-check">
       <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -122,12 +122,18 @@ body{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	padding: 30px 100px;
+	padding: 5% 10%;
 	box-shadow: 3px 3px 10px 0px #000;
-	border-radius: 10px;
-	width: 70vw;
-	height: 550px;
+	width: 70%;
+	height: auto;
 	background-color: #FFFFFF;
+}
+/* Media Query for Small Screens */
+@media only screen and (max-width: 768px) {
+  .form-container {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 10% 5%; /* Adjust padding for smaller screens */
+  }
 }
 .text-judul{
 	font-weight: bold;

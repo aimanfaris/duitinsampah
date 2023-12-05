@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background-color: #17594a;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #2D2D2D;
+}
+
+/* ... (existing styles) ... */
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .text-wrapper {
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+  .img {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .navbar-collapse {
+    background-color: #D0E7D2; /* Change background color for mobile menu */
+  }
+
+  /* Add more responsive adjustments as needed */
+}

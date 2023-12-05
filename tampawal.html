@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="../fontawesome/css/stylehome.css">
 	<link rel="stylesheet" type="text/css" href="../css/loader.css">
 	<title>Duitin Sampah</title>
+	<link rel="icon" href="./assets/logo.png">
   </head>
 
 <div id="loader-wrapper">
@@ -47,13 +48,21 @@
 			  <a class="nav-link" href="upload.html">Upload</a>
 			</li>
 			<li class="nav-item">
-			  <a class="nav-link" href="keranjang.html">Keranjang</a>
+				<a href="keranjang.html">
+					<img src="./assets/keranjangku.png" class="ms-2" style="width: 35px;">
+				</a>
 			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="akun.html">Akun</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="index.html">Keluar</a>
+			<div class="dropdown">
+				<a href="#" class="d-block link-dark text-decoration-none dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+					<img src="https://avatars.githubusercontent.com/u/90247965?v=4" alt="ava" width="32" height="32" class="rounded-circle border-dark">
+				</a>
+				<ul class="dropdown-menu dropdown-menu-end">
+					<!-- Dropdown content here -->
+					<li><a class="dropdown-item" href="profile.html">Profile</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="index.html">Sign Out</a></li>
+				</ul>
+			</div>
 			</li>
 		  </ul>
 		</div>
@@ -98,42 +107,42 @@
 
 	<!-- Kategori -->
 	<div class="container mt-5">
-		<div class="judul-kategori" style="background-color: #fff; padding: 5px 10px;">
-		<h5 class="text-center" style="margin-top: 10px;">KATEGORI SAMPAH</h5>
-			
+		<div class="judul-kategori bg-white p-3">
+		  <h5 class="text-center mb-3">KATEGORI SAMPAH</h5>
 		</div>
+	  </div>
 		<div class="row text-center row-container mt-2">
-			<div class="col-lg-2 col-md-3 col-sm-6 col-6">
+			<div class="col-lg-2 col-md-3 col-sm-4 col-6">
 				<div class="menu-kategori">
 				<a href="anorganik.html"><img src="./assets/tongmerah.png" class="img-categori mt-3"></a>
 				<p class="mt-2">ANORGANIK</P>
 				</div>
 			</div>
-				<div class="col-lg-2 col-md-3 col-sm-6 col-7">
+				<div class="col-lg-2 col-md-3 col-sm-4 col-7">
 				<div class="menu-kategori">
 				<a href="organik.html"><img src="./assets/tongijo.png" class="img-categori mt-3"></a>
 				<p class="mt-2">ORGANIK</P>
 				</div>
 			</div>
-				<div class="col-lg-2 col-md-3 col-sm-6 col-7">
+				<div class="col-lg-2 col-md-3 col-sm-4 col-7">
 				<div class="menu-kategori">
 				<a href="btiga.html"><img src="./assets/tongabubakar.png" class="img-categori mt-3"></a>
 				<p class="mt-2">B3</P>
 				</div>
 			</div>
-				<div class="col-lg-2 col-md-3 col-sm-6 col-7">
+				<div class="col-lg-2 col-md-3 col-sm-4 col-7">
 				<div class="menu-kategori">
 				<a href="elektronik.html"><img src="./assets/tongbiru.png" class="img-categori mt-3"></a>
 				<p class="mt-2">ELEKTRONIK</P>
 				</div>
 			</div>
-				<div class="col-lg-2 col-md-3 col-sm-6 col-7">
+				<div class="col-lg-2 col-md-3 col-sm-4 col-7">
 				<div class="menu-kategori">
 				<a href="daurulang.html"><img src="./assets/tongkuning.png" class="img-categori mt-3"></a>
 				<p class="mt-2">DAUR ULANG</P>
 				</div>
             </div>
-                <div class="col-lg-2 col-md-3 col-sm-6 col-7">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-7">
                 <div class="menu-kategori">
                 <a href="konstruksi.html"><img src="./assets/tongmerah.png" class="img-categori mt-3"></a>
                 <p class="mt-2">KONSTRUKSI</P>
@@ -321,9 +330,16 @@ body{
 	height: 250px;
 }
 .judul-kategori{
-	border-radius: 0px;
-	width: 400px;
-	margin-left: 30%;
+	border-radius: 0;
+ 	width: 70%; /* Adjust width based on your design needs */
+  	margin-left: 15%; /* Adjust margin based on your design needs */
+	/* Media Query for Small Screens */
+@media only screen and (max-width: 768px) {
+  .judul-kategori {
+    width: 90%; /* Adjust width for smaller screens */
+    margin-left: 5%; /* Adjust margin for smaller screens */
+  }
+	}
 }
 .menu-kategori{
 	border-radius: 30px;
@@ -335,5 +351,6 @@ body{
 .container{
 	align-items: center;
 }
+
 
 </style>
